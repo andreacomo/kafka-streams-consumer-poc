@@ -1,21 +1,12 @@
+server:
+  port: 8081
+
 spring:
   application:
-    name: kafka-streams-poc
-
-  datasource:
-    hikari:
-      connection-timeout: 20000
-      maximum-pool-size: 10
-    url: jdbc:postgresql://localhost:5432/poc
-    username: poc_admin
-    password: poc_admin_pwd
-
-  jpa:
-    show-sql: true
-    generate-ddl: false
+    name: kafka-streams-consumer-poc
 
   kafka:
-    client-id: kafka-streams-poc
+    client-id: kafka-streams-consumer-poc
     bootstrap-servers: localhost:19092
 #    consumer:
 #      #key-deserializer: org.apache.kafka.connect.json.JsonDeserializer
@@ -23,4 +14,4 @@ spring:
 #      key-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
 #      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
     streams:
-      application-id: applications-stream
+      application-id: applications-consumer-stream

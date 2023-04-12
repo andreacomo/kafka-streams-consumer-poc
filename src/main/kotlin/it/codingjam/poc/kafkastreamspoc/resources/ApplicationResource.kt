@@ -1,10 +1,14 @@
 package it.codingjam.poc.kafkastreamspoc.resources
 
-import it.codingjam.poc.kafkastreamspoc.models.entities.Application
-import it.codingjam.poc.kafkastreamspoc.models.entities.Credential
+import it.codingjam.poc.kafkastreamspoc.listeners.dtos.ApplicationWithCredentialDTO
 import it.codingjam.poc.kafkastreamspoc.services.ApplicationService
+import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
-import org.springframework.web.bind.annotation.*
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.server.ResponseStatusException
 
 @RestController
 @RequestMapping("/api/v1/applications",
@@ -12,19 +16,8 @@ import org.springframework.web.bind.annotation.*
     consumes = [MediaType.APPLICATION_JSON_VALUE])
 class ApplicationResource(val applicationService: ApplicationService) {
 
-    @PostMapping
-    fun create(@RequestBody application: Application): Application {
-        return applicationService.saveNew(application)
-    }
-
-    @PutMapping("/{appId}/credentials")
-    fun updateCredentials(@PathVariable("appId") appId: Long,
-                          @RequestBody credential: Credential): Application {
-        return applicationService.update(credential, appId)
-    }
-
-    @GetMapping
-    fun getAll(): List<Application> {
-        return applicationService.getAll()
+    @GetMapping("/{appId}")
+    fun getById(@PathVariable("appId") id: Long): ApplicationWithCredentialDTO {
+        return applicationService.getById(id) ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Cannot find app with id $id")
     }
 }
