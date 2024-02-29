@@ -3,12 +3,12 @@
 ## Tech Stack
 andreacomo/kafka-streams-consumer-poc is built on the following main stack:
 
-- [PostgreSQL](http://www.postgresql.org/) – Databases
-- [Kafka](http://kafka.apache.org/) – Message Queue
-- [Spring Framework](https://spring.io/projects/spring-framework) – Frameworks (Full Stack)
-- [Apache Camel](https://camel.apache.org/) – Platform as a Service
 - [Kotlin](https://kotlinlang.org/) – Languages
+- [Spring Framework](https://spring.io/projects/spring-framework) – Frameworks (Full Stack)
+- [Kafka](http://kafka.apache.org/) – Message Queue
 - [Kafka Streams](https://kafka.apache.org/documentation/streams/) – Stream Processing
+- [PostgreSQL](http://www.postgresql.org/) – Databases
+- [Apache Camel](https://camel.apache.org/) – Platform as a Service
 
 Full tech stack [here](/techstack.md)
 
@@ -18,12 +18,12 @@ Full tech stack [here](/techstack.md)
 ## Tech Stack
 andreacomo/kafka-streams-consumer-poc is built on the following main stack:
 
-- <img width='25' height='25' src='https://img.stackshare.io/service/1028/ASOhU5xJ.png' alt='PostgreSQL'/> [PostgreSQL](http://www.postgresql.org/) – Databases
-- <img width='25' height='25' src='https://img.stackshare.io/service/1063/kazUJooF_400x400.jpg' alt='Kafka'/> [Kafka](http://kafka.apache.org/) – Message Queue
-- <img width='25' height='25' src='https://img.stackshare.io/service/2006/spring-framework-project-logo.png' alt='Spring Framework'/> [Spring Framework](https://spring.io/projects/spring-framework) – Frameworks (Full Stack)
-- <img width='25' height='25' src='https://img.stackshare.io/service/3276/xWt1RFo6_400x400.jpg' alt='Apache Camel'/> [Apache Camel](https://camel.apache.org/) – Platform as a Service
 - <img width='25' height='25' src='https://img.stackshare.io/service/3750/pCfEzr6L.png' alt='Kotlin'/> [Kotlin](https://kotlinlang.org/) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/2006/spring-framework-project-logo.png' alt='Spring Framework'/> [Spring Framework](https://spring.io/projects/spring-framework) – Frameworks (Full Stack)
+- <img width='25' height='25' src='https://img.stackshare.io/service/1063/kazUJooF_400x400.jpg' alt='Kafka'/> [Kafka](http://kafka.apache.org/) – Message Queue
 - <img width='25' height='25' src='https://img.stackshare.io/service/9190/kazUJooF_400x400.jpg' alt='Kafka Streams'/> [Kafka Streams](https://kafka.apache.org/documentation/streams/) – Stream Processing
+- <img width='25' height='25' src='https://img.stackshare.io/service/1028/ASOhU5xJ.png' alt='PostgreSQL'/> [PostgreSQL](http://www.postgresql.org/) – Databases
+- <img width='25' height='25' src='https://img.stackshare.io/service/3276/xWt1RFo6_400x400.jpg' alt='Apache Camel'/> [Apache Camel](https://camel.apache.org/) – Platform as a Service
 
 Full tech stack [here](/techstack.md)
 
@@ -34,7 +34,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [andreacomo/kafka-streams-consumer-poc](https://github.com/andreacomo/kafka-streams-consumer-poc)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|16<br/>Tools used|01/05/24 <br/>Report generated|
+|16<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -130,7 +130,7 @@ Full tech stack [here](/techstack.md)
 |[org.apache.kafka:kafka-streams](https://kafka.apache.org)|N/A|04/12/23|Andrea Como |Apache-2.0|N/A|
 |[org.jetbrains.kotlin:kotlin-reflect](https://kotlinlang.org/)|N/A|10/31/21|andrea.como |Apache-2.0|N/A|
 |[org.jetbrains.kotlin:kotlin-stdlib-jdk8](https://kotlinlang.org/)|N/A|10/31/21|andrea.como |Apache-2.0|N/A|
-|[org.postgresql:postgresql](http://jdbc.postgresql.org)|v42.2.14|10/31/21|andrea.como |BSD-2-Clause|[CVE-2022-21724](https://github.com/advisories/GHSA-v7wg-cpwc-24m4) (High)<br/>[CVE-2022-31197](https://github.com/advisories/GHSA-r38f-c4h4-hqq2) (High)<br/>[](https://github.com/advisories/GHSA-673j-qm5f-xpv8) (Moderate)<br/>[CVE-2022-41946](https://github.com/advisories/GHSA-562r-vg33-8x8h) (Moderate)<br/>[CVE-2022-26520](https://github.com/advisories/GHSA-727h-hrw8-jg8q) (Low)|
+|[org.postgresql:postgresql](http://jdbc.postgresql.org)|v42.2.14|10/31/21|andrea.como |BSD-2-Clause|[CVE-2024-1597](https://github.com/advisories/GHSA-24rp-q3w6-vc56) (Critical)<br/>[CVE-2022-31197](https://github.com/advisories/GHSA-r38f-c4h4-hqq2) (High)<br/>[CVE-2022-21724](https://github.com/advisories/GHSA-v7wg-cpwc-24m4) (High)<br/>[](https://github.com/advisories/GHSA-673j-qm5f-xpv8) (Moderate)<br/>[CVE-2022-41946](https://github.com/advisories/GHSA-562r-vg33-8x8h) (Moderate)<br/>[CVE-2022-26520](https://github.com/advisories/GHSA-727h-hrw8-jg8q) (Low)|
 |[org.projectlombok:lombok](https://projectlombok.org)|N/A|10/31/21|andrea.como |MIT|N/A|
 |[org.springframework.boot:spring-boot-starter-actuator](https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-actuator)|N/A|10/31/21|andrea.como |Apache-2.0|N/A|
 |[org.springframework.boot:spring-boot-starter-test](https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-test)|N/A|10/31/21|andrea.como |Apache-2.0|N/A|
