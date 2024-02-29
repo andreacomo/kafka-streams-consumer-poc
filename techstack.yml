@@ -2,7 +2,7 @@ repo_name: andreacomo/kafka-streams-consumer-poc
 report_id: d5dbd8588344b45d3fef23f7b4cd3759
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:15:27+00:00'
+timestamp: '2024-02-29T19:11:38+00:00'
 requested_by: andreacomo
 provider: github
 branch: master
@@ -153,12 +153,12 @@ tools:
   last_updated_by: andrea.como
   last_updated_on: 2021-10-31 17:48:08.000000000 Z
   vulnerabilities:
-  - name: pgjdbc Does Not Check Class Instantiation when providing Plugin Classes
-    cve_id: CVE-2022-21724
-    cve_url: https://github.com/advisories/GHSA-v7wg-cpwc-24m4
-    detected_date: Feb 2
-    severity: high
-    first_patched: 42.2.25
+  - name: org.postgresql:postgresql vulnerable to SQL Injection via line comment generation
+    cve_id: CVE-2024-1597
+    cve_url: https://github.com/advisories/GHSA-24rp-q3w6-vc56
+    detected_date: Feb 22
+    severity: critical
+    first_patched: 42.2.28
   - name: PostgreSQL JDBC Driver SQL Injection in ResultSet.refreshRow() with malicious
       column names
     cve_id: CVE-2022-31197
@@ -166,6 +166,12 @@ tools:
     detected_date: Aug 7
     severity: high
     first_patched: 42.2.26
+  - name: pgjdbc Does Not Check Class Instantiation when providing Plugin Classes
+    cve_id: CVE-2022-21724
+    cve_url: https://github.com/advisories/GHSA-v7wg-cpwc-24m4
+    detected_date: Feb 2
+    severity: high
+    first_patched: 42.2.25
   - name: pgjdbc Arbitrary File Write Vulnerability
     cve_id: 
     cve_url: https://github.com/advisories/GHSA-673j-qm5f-xpv8
